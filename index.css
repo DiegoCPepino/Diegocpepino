@@ -1,0 +1,42 @@
+  .container {
+    display: inline-block;
+  }
+  
+  .typed {
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right: 2px solid #000;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+  }
+
+  section {
+      height: 200px;
+      width: 500px;
+      background: #fff;
+      color: #333;
+      border-radius: 10px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  section a {
+    color: #000;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: #000}
+    100% {border-right-color: transparent}
+  }
+
+ 
